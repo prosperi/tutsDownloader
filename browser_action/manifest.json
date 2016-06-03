@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "browser_action",
+  "version": "0.1.0",
+  "description": "Test Version",
+  "author": "Paranormal Code",
+
+  "browser_action":{
+    "default_title": "test",
+    "default_popup":"popup/popup.html"
+  },
+  "background":{
+    "scripts":["background.js"],
+    "persistent": false
+  },
+  "permissions":[
+    "identity",
+    "tabs",
+    "activeTab",
+    "*://*/*",
+    "background"
+  ]
+
+
+}
